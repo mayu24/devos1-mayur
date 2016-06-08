@@ -1,5 +1,5 @@
 #
-class ntp::service inherits ntp {
+lass ntp::service inherits ntp {
 
   if ! ($ntp::service_ensure in [ 'running', 'stopped' ]) {
     fail('service_ensure parameter must be running or stopped')
